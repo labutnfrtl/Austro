@@ -1,1 +1,1 @@
-Autro es un proyecto de medición sobre un muro trombe
+Austro es un proyecto de medición sobre un muro trombe
