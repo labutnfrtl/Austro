@@ -1,0 +1,7 @@
+[2024-07-25 10:52:54] Error de comunicación serial: ClearCommError failed (PermissionError(13, 'El dispositivo no reconoce el comando.', None, 22))
+[2024-07-25 12:35:59] Error de comunicación serial: ClearCommError failed (PermissionError(13, 'El dispositivo no reconoce el comando.', None, 22))
+[2024-08-23 12:57:45] Error al buscar puertos seriales: No se encontró ningún puerto COM disponible
+[2024-08-23 12:58:17] Error al buscar puertos seriales: No se encontró ningún puerto COM disponible
+[2024-08-23 15:11:06] Error al buscar puertos seriales: No se encontró ningún puerto COM disponible
+[2024-10-05 11:54:18] Error al buscar puertos seriales: No se encontró ningún puerto COM disponible
+[2024-10-05 11:56:21] Error al buscar puertos seriales: No se encontró ningún puerto COM disponible

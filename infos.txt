@@ -1,0 +1,10 @@
+Toma de datos número 261:
+Sensor 1: Humedad = 64.00%, Temperatura = 18.20°C
+Sensor 2: Humedad = 45.30%, Temperatura = 23.60°C
+Sensor 3: Humedad = 61.20%, Temperatura = 19.00°C
+Sensor 1: Humedad = 64.10%, Temperatura = 18.30°C
+Sensor 2: Humedad = 45.30%, Temperatura = 23.60°C
+Sensor 3: Humedad = 61.20%, Temperatura = 19.00°C
+Sensor 1: Humedad = 64.10%, Temperatura = 18.20°C
+Sensor 2: Humedad = 45.20%, Temperatura = 23.60°C
+Sensor 3: Humedad = 61.20%, Temperatura = 19.00°C
