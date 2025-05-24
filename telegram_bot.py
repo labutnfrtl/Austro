@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import time
 
 # Reemplaza 'TU_TOKEN' con el token que obtuviste de BotFather
-TOKEN = 
+TOKEN =  'TU_TOKEN'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("¡Hola! Soy tu bot. Envíame 'clima' para leer las primeras 4 líneas de infos.txt, 'error' para leer el archivo error.txt, 'datos' para recibir el archivo backup.csv, o 'comandos' para ver la lista de comandos.")
