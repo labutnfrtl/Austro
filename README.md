@@ -56,6 +56,8 @@ LDR (fotocélula)
 
 PIR (movimiento)
 
+**Austro** toma su nombre de *Auster*, el dios del viento del sur en la mitología romana, asociado al calor y la humedad — elementos que este sistema monitorea en un muro Trombe.
+
 
 
 
