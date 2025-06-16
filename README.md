@@ -32,7 +32,7 @@ Instalación de dependencias:
 
 ```bash
 pip install pyserial
-´´´
+```
 
 ## 🚀 Uso básico
 Conectá los sensores DHT22 al Arduino.
@@ -43,9 +43,8 @@ Ejecutá el script de Python:
 
 ```bash
 python main.py
-´´´
+```
 Los datos se guardarán automáticamente con fecha y hora en una base de datos SQLite.
-
 
 
 ## 🔄 Pensado para expandirse
