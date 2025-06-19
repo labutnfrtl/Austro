@@ -16,7 +16,6 @@ El propósito del proyecto es **medir, registrar y analizar** datos de temperatu
 - Lectura mediante Arduino.
 - Recepción de datos por puerto serie en Python.
 - Almacenamiento en base de datos **SQLite**.
-- Análisis estadístico básico desde consola o código Python.
 
 ---
 
