@@ -15,9 +15,9 @@ def crear_tabla_sensor():
 
 def inicializar_sensores():
     sensores = [
-        (1, 'Sensor 1', 'Sensor en parte inferior'),
-        (2, 'Sensor 2', 'Sensor en parte superior'),
-        (3, 'Sensor 3', 'Sensor en parte medio'),
+        (1, 'DTH11-1', 'Sensor en parte inferior'),
+        (2, 'DTH11-2', 'Sensor en parte superior'),
+        (3, 'DTH11-3', 'Sensor en parte medio')
     ]
 
     conexion = conectar()
