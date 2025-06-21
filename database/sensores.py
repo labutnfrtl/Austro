@@ -17,7 +17,8 @@ def inicializar_sensores():
     sensores = [
         (1, 'DTH11-1', 'Sensor en parte inferior'),
         (2, 'DTH11-2', 'Sensor en parte superior'),
-        (3, 'DTH11-3', 'Sensor en parte medio')
+        (3, 'DTH11-3', 'Sensor en parte medio'),
+        (4, 'mq-7', 'Sensor de gas MQ-7')
     ]
 
     conexion = conectar()
