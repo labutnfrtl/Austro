@@ -25,7 +25,7 @@ def inicializar_sensores():
     cursor = conexion.cursor()
     for idSensor, nombre, descripcion in sensores:
         cursor.execute('''
-            INSERT OR IGNORE INTO Sensor (idSensor, nombre, descripcion)
+            INSERT OR REPLACE INTO Sensor (idSensor, nombre, descripcion)
             VALUES (?, ?, ?)
         ''', (idSensor, nombre, descripcion))
     conexion.commit()
