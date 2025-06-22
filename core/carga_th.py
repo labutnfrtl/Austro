@@ -3,7 +3,6 @@ from database.temperaturahumedad import insertar_datos_TH   # donde está defini
 import hardware.arduino as dato  # tu módulo para leer del Arduino
 import serial
 
-
 def cargar_datos_TH():
     """
     Lee los datos de temperatura y humedad desde el Arduino
