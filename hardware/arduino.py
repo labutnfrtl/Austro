@@ -1,10 +1,9 @@
 import time
 import serial
+import random
 
 PUERTO = 'COM3'     
 VELOCIDAD = 9600     
-
-import random
 
 def leer_datos():
     linea = leer_arduino()
@@ -31,5 +30,3 @@ def leer_arduino_mook(n=6, minimo=-56, maximo=70):
     valores = [f"{random.uniform(minimo, maximo):.1f}" for _ in range(n)]
     linea = ";".join(valores)
     return linea.encode('ascii')
-
-
