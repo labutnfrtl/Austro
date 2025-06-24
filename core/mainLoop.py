@@ -17,8 +17,8 @@ def mainLoop():
 
         if minuto_actual in minutos_validos:
             th.cargar_datos_TH()
-            print("Datos de temperatura y humedad almacenados correctamente.")
-            print(f"Lectura número: {count + 1}")
+            print("Datos de temperatura y humedad almacenados correctamente.",flush=True)
+            print(f"Lectura número: {count + 1}",flush=True)
             count += 1
             time.sleep(60)  # Espera un minuto completo para evitar repetir
 
