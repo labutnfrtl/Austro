@@ -1,4 +1,3 @@
-
 from datetime import datetime
 import time
 import core.carga_th as th
@@ -6,8 +5,10 @@ import time
 import core.carga_th as th
 
 def mainLoop():
+
     count = 0
     minutos_validos = [0, 15, 30, 45]  # Cambialos si querés otros minutos
+    
     print("Iniciando toma de datos cada 15 minutos...")
 
     while True:

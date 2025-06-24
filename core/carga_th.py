@@ -3,7 +3,6 @@ from database.temperaturahumedad import insertar_datos_TH   # donde está defini
 import hardware.arduino as dato  # tu módulo para leer del Arduino
 import serial
 
-
 def cargar_datos_TH():
     """
     Lee los datos de temperatura y humedad desde el Arduino
@@ -12,7 +11,11 @@ def cargar_datos_TH():
 
 array = dato.leer_datos()
 
+<<<<<<< HEAD
     # Convertir los datos a float
+=======
+# Convertir los datos a float
+>>>>>>> 1b3f97c836819ccf9214f81bebe04b5a3a65526d
 sensor1_temp = float(array[0])
 sensor1_hum  = float(array[1])
 sensor2_temp = float(array[2])
@@ -20,7 +23,11 @@ sensor2_hum  = float(array[3])
 sensor3_temp = float(array[4])
 sensor3_hum  = float(array[5])
 
+<<<<<<< HEAD
     # Insertar datos por sensor (con idSensor 1, 2 y 3)
+=======
+# Insertar datos por sensor (con idSensor 1, 2 y 3)
+>>>>>>> 1b3f97c836819ccf9214f81bebe04b5a3a65526d
 insertar_datos_TH(1, sensor1_temp, sensor1_hum)
 insertar_datos_TH(2, sensor2_temp, sensor2_hum)
 insertar_datos_TH(3, sensor3_temp, sensor3_hum)
