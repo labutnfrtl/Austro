@@ -8,6 +8,7 @@ logging.basicConfig(filename='app.log', level=logging.ERROR)
 if __name__ == '__main__':
     try:
         inicializar()
+
     except Exception as e:
         logging.error(f"Error al inicializar: {e}")
 

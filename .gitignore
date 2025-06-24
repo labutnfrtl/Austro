@@ -10,3 +10,7 @@ __pycache__/
 # ignorar logs 
 
 app.log
+
+#ingonar .env aca van las contraseñas ojo !!!
+
+.env
