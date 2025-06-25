@@ -1,18 +1,11 @@
-import logging
-from database.constructor_db import inicializar
 from core.mainLoop import mainLoop
-import core.carga_th as ds
+from core.setup import setup
 
-logging.basicConfig(filename='app.log', level=logging.ERROR)
 
 if __name__ == '__main__':
-    try:
-        inicializar()
-
-    except Exception as e:
-        logging.error(f"Error al inicializar: {e}")
-
-    try:
+        print("Iniciando el programa...")
+        setup()
+        print("Base de datos inicializada.")
+        print("Iniciando el bucle principal...")    
         mainLoop()
-    except Exception as e:
-        logging.error(f"Error en mainLoop: {e}")
+        print("Bucle principal iniciado.")
