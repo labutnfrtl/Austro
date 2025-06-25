@@ -1,0 +1,12 @@
+{
+
+    "arduino":{
+        "puerto":"",
+        "baudrate":9600   
+    },
+
+    "entorno":{
+    "sin_conexion":true    
+    }
+
+}

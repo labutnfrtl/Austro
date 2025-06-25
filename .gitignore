@@ -14,3 +14,6 @@ app.log
 #ingonar .env aca van las contraseñas ojo !!!
 
 .env
+
+# Ignorar archivos de configuración locales
+config/config.json
