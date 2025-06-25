@@ -1,9 +1,16 @@
 import time
 import serial
 import random
+from config.config import config
 
-PUERTO = 'COM3'     
-VELOCIDAD = 9600     
+print(config)
+
+PUERTO = config["arduino"]["puerto"]    
+VELOCIDAD = config["arduino"]["baudrate"]     
+ENTORNO = config["entorno"]["sin_conexion"]
+
+
+
 
 def leer_datos():
     linea = leer_arduino()
@@ -11,6 +18,12 @@ def leer_datos():
     return array
 
 def leer_arduino():
+    if ENTORNO:
+        return leer_arduino_mook()
+    else:
+        return leer_arduino_real()
+
+def leer_arduino_real():
     """
     esta función lee los datos del Arduino a través del puerto serie.
     Se espera que el Arduino envíe una línea de datos en formato
