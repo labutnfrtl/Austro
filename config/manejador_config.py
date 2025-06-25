@@ -2,6 +2,8 @@ import os
 import json
 import shutil
 
+BASE_DIR = os.path.dirname(__file__)  # te da el path absoluto de config/
+
 def merge_dicts(ejemplo, actual):
     """
     Fusiona recursivamente dos diccionarios:
@@ -19,7 +21,7 @@ def merge_dicts(ejemplo, actual):
     return actualizado
 
 
-def inicializar_config(path_config="config.json", path_ejemplo="config.example.json"):
+def inicializar_config(path_config=os.path.join(BASE_DIR, "config.json"),path_ejemplo=os.path.join(BASE_DIR, "config.example.json")):
     """
     Verifica si config.json existe. Si no existe, lo crea a partir del ejemplo.
     Si existe, agrega las claves que falten del ejemplo sin borrar las existentes.
@@ -44,3 +46,4 @@ def inicializar_config(path_config="config.json", path_ejemplo="config.example.j
         with open(path_config, "w") as f:
             json.dump(config, f, indent=4)
         print("[INFO] Se actualizaron claves faltantes en 'config.json'.")
+    return config
