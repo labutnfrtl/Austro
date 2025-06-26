@@ -1,8 +1,7 @@
 from datetime import datetime
 import time
 import core.carga_th as th
-import time
-import core.carga_th as th
+
 
 def mainLoop():
 
@@ -16,6 +15,7 @@ def mainLoop():
         minuto_actual = ahora.minute
 
         if minuto_actual in minutos_validos:
+          
             th.cargar_datos_TH()
             print("Datos de temperatura y humedad almacenados correctamente.",flush=True)
             print(f"Lectura número: {count + 1}",flush=True)

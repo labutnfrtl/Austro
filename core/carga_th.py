@@ -1,7 +1,5 @@
-from datetime import datetime
 from database.temperaturahumedad import insertar_datos_TH   # donde está definida insertar_datos_TH
 import hardware.arduino as dato  # tu módulo para leer del Arduino
-import serial
 
 def cargar_datos_TH():
     """
