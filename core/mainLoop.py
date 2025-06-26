@@ -8,7 +8,7 @@ def mainLoop():
     count = 0
     minutos_validos = [0, 15, 30, 45]  # Cambialos si querés otros minutos
     
-    print("Iniciando toma de datos cada 15 minutos...")
+    print("Iniciando toma de datos cada 15 minutos... ⏰")
 
     while True:
         ahora = datetime.now()
@@ -17,7 +17,7 @@ def mainLoop():
         if minuto_actual in minutos_validos:
           
             th.cargar_datos_TH()
-            print("Datos de temperatura y humedad almacenados correctamente.",flush=True)
+            print("Datos de temperatura y humedad almacenados correctamente. ✅",flush=True)
             print(f"Lectura número: {count + 1}",flush=True)
             count += 1
             time.sleep(60)  # Espera un minuto completo para evitar repetir
