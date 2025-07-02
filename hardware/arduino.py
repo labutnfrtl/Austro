@@ -24,15 +24,18 @@ def leer_arduino():
         return leer_arduino_real()
 
 def leer_arduino_real():
-    """
-    esta función lee los datos del Arduino a través del puerto serie.
-    Se espera que el Arduino envíe una línea de datos en formato
-    "valor1;valor2;valor3;valor4;valor5;valor6".
-    """
-    arduino = serial.Serial(PUERTO, VELOCIDAD, timeout=2)
-    time.sleep(2)
-    linea = arduino.readline()
-    arduino.close()
+    try:
+        arduino = serial.Serial(PUERTO, VELOCIDAD, timeout=2)
+        time.sleep(2)
+        linea = arduino.readline()
+    except Exception as e:
+        print(f"Error al leer del Arduino: {e}")
+        return b""
+    finally:
+        try:
+            arduino.close()
+        except:
+            pass
     return linea
 
 def leer_arduino_mook(n=6, minimo=-56, maximo=70):

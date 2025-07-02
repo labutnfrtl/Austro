@@ -4,23 +4,21 @@ import core.carga_th as th
 
 
 def mainLoop():
-
     count = 0
-    minutos_validos = [0, 15, 30, 45]  # Cambialos si querés otros minutos
-    
+    minutos_validos = [0, 15, 30, 45]
     print("Iniciando toma de datos cada 15 minutos... ⏰")
-
     while True:
-        ahora = datetime.now()
-        minuto_actual = ahora.minute
-
-        if minuto_actual in minutos_validos:
-          
-            th.cargar_datos_TH()
-            print("Datos de temperatura y humedad almacenados correctamente. ✅",flush=True)
-            print(f"Lectura número: {count + 1}",flush=True)
-            count += 1
-            time.sleep(60)  # Espera un minuto completo para evitar repetir
-
-        else:
-            time.sleep(1)  # Revisa cada segundo hasta que llegue el momento correcto
+        try:
+            ahora = datetime.now()
+            minuto_actual = ahora.minute
+            if minuto_actual in minutos_validos:
+                exito = th.cargar_datos_TH()
+                if exito:
+                    print(f"Lectura número: {count + 1}", flush=True)
+                    count += 1
+                time.sleep(60)
+            else:
+                time.sleep(1)
+        except Exception as e:
+            print(f"Error en el bucle principal: {e}")
+            time.sleep(5)
