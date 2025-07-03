@@ -4,6 +4,8 @@ import time
 from dotenv import load_dotenv
 import os
 
+#borrar esto despues.
+
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
