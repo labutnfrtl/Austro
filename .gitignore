@@ -17,3 +17,6 @@ app.log
 
 # Ignorar archivos de configuración locales
 config/config.json
+
+#ignorar base de datos de pruebas
+registros_ejemplos.db

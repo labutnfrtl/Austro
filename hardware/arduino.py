@@ -38,7 +38,7 @@ def leer_arduino_real():
             pass
     return linea
 
-def leer_arduino_mook(n=6, minimo=-56, maximo=70):
+def leer_arduino_mook(n=7, minimo=-5, maximo=40):
     """
     esta función simula la lectura de datos del Arduino
     generando valores aleatorios entre `minimo` y `maximo`.
