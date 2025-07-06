@@ -1,8 +1,4 @@
 from database.pir import insertar_datos_PIR
-import hardware.arduino as dato 
-import time
-
-from database.pir import insertar_datos_PIR
 import hardware.arduino as dato
 import time
 
@@ -48,7 +44,7 @@ def insertar_promedio():
         return None, 0
 
     promedio_valor = sum(acumulador_valores) / acumulador_cantidad
-    insertar_datos_PIR(1, promedio_valor)
+    insertar_datos_PIR(5, promedio_valor)
 
     # Reiniciar acumulador
     cantidad = acumulador_cantidad
