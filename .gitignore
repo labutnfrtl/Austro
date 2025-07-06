@@ -19,4 +19,4 @@ app.log
 config/config.json
 
 #ignorar base de datos de pruebas
-registros_ejemplos.db
+registros_ejemplo.db
