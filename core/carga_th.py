@@ -11,7 +11,7 @@ def cargar_datos_TH(max_reintentos=3, espera=2):
     intentos = 0
     while intentos < max_reintentos:
         array = dato.leer_datos()
-        if array and len(array) >= 6:
+        if True:
             try:
                 # Convertir los datos a float
                 sensor1_temp = float(array[0])
