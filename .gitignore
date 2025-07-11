@@ -20,3 +20,8 @@ config/config.json
 
 #ignorar base de datos de pruebas
 registros_ejemplo.db
+
+#ignorar enviroment 
+venv/
+.env/
+env/
