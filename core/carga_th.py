@@ -14,12 +14,12 @@ def cargar_datos_TH(max_reintentos=3, espera=2):
         if True:
             try:
                 # Convertir los datos a float
-                sensor1_temp = float(array[0])
-                sensor1_hum  = float(array[1])
-                sensor2_temp = float(array[2])
-                sensor2_hum  = float(array[3])
-                sensor3_temp = float(array[4])
-                sensor3_hum  = float(array[5])
+                sensor1_temp = float(array[1])
+                sensor1_hum  = float(array[0])
+                sensor2_temp = float(array[3])
+                sensor2_hum  = float(array[2])
+                sensor3_temp = float(array[5])
+                sensor3_hum  = float(array[4])
 
                 # Insertar datos por sensor (con idSensor 1, 2 y 3)
                 insertar_datos_TH(1, sensor1_temp, sensor1_hum)

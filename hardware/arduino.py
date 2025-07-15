@@ -38,11 +38,11 @@ def leer_arduino_real():
             pass
     return linea
 
-def leer_arduino_mook(n=10, minimo=-5, maximo=40):
+def leer_arduino_mook(n=10):
     """
-    esta función simula la lectura de datos del Arduino
-    generando valores aleatorios entre `minimo` y `maximo`.
+    Esta función simula la lectura de datos del Arduino
+    generando los valores del 0 al 9 como strings separados por ';'.
     """
-    valores = [f"{random.uniform(minimo, maximo):.1f}" for _ in range(n)]
+    valores = [str(i) for i in range(n)]
     linea = ";".join(valores)
     return linea.encode('ascii')
